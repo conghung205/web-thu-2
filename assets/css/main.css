@@ -1,0 +1,227 @@
+*{
+    box-sizing: border-box;
+}
+
+ /* ========Code chung========= */
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+    font-family: "Poppins", serif;
+}
+a{
+    text-decoration: none;
+}
+.main-content{
+    width: 1170px;
+    margin: 0 auto;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 186px;
+    height: 68px;
+    border-radius: 14px;
+    background: #1EBFC1;
+    color: #FFF;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+/* =======Header======= */
+.header{
+    padding-top: 52px;
+}
+.header .body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .list-item{
+    display: flex;
+    gap: 15px;
+}
+.navbar .nav-item a{
+    display: block;
+    color: #2F3A3B;
+    font-size: 1.6rem;
+    padding: 12px;
+}
+
+.header .Register-login{
+    display: flex;
+    align-items: center;
+}
+.header .sign-in a{
+    display: block;
+    padding: 24px;
+    color: #494949;
+    font-size: 1.6rem;
+}
+.header .Register-login .btn-sign-up{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 108px;
+    height: 48px;
+    border-radius: 6px;
+    border: 1px solid #1EBFC1;
+}
+.header .btn-sign-up a{
+    display: block;
+    width: 100%;
+    color: #1EBFC1;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+
+/* ======hero======= */
+.hero{
+    padding: 50px 0;
+}
+.hero .body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero .body .hero-left{
+    width: 40%;
+}
+.hero .hero-left .describe{
+    color: #767E7E;
+    font-size: 1.4rem;
+}
+.hero .hero-left .heading{
+    color: #0D1111;
+    font-size: 6.2rem;
+    font-weight: 700;
+    line-height: 1.16; /*72px = 116.129% */
+    margin-top: 18px;
+}
+.hero .hero-left .desc{
+    max-width: 374px;
+    color: #9DA6A5;
+    font-size: 1.8rem;
+    line-height: 1.78; /*32px = 177.778% */
+    margin-top: 46px;
+}
+.hero .hero-btn{
+    margin-top: 52px;
+}
+
+
+/* ======hero right===== */
+.hero-right{
+    position: relative;
+}
+.hero .hero-right .hero-img{
+    max-width: 576px;
+    height: 631px;
+    background: #E0F7F6;
+}
+.hero .hero-right .course-mini{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 17px 25px;
+    width: 157px;
+    height: 75px;
+    border-radius: 18px;
+    background: #FEFEFD;
+    box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
+    position: absolute;
+    top: 149px;
+    left: -40px;
+}
+.hero-right .course-mini .book{
+    width: 36px;
+    height: 40px;
+    background: #FF8282;
+}
+.hero-right .course-mini .title{
+    color: #0D1111;
+    font-size: 1rem;
+    font-weight: 500;;
+}
+.hero-right .book img{
+    display: flex;
+    margin: 28px 4px 0;
+}
+.hero-right .Schedules-mini{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 46px;
+    left: -65px;
+    width: 124px;
+    height: 132px;
+    border-radius: 24px;
+    background: #FFF;
+    padding: 0 25px;
+    box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
+}
+.hero-right .Schedules-mini .title{
+    margin-top: 16px;
+    color: #0D1111;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.hero-right .people{
+    padding: 17px 35px;
+    position: absolute;
+    bottom: 41px;
+    right: 45px;
+    width: 207px;
+    height: 90px;
+    border-radius: 24px;
+    background: #FEFEFD;
+    box-shadow: 0px 12px 80px 0px rgba(0, 0, 0, 0.05);
+}
+.hero .people .title{
+    color: #0D1111;
+    font-size: 10px;
+    font-weight: 500;
+}
+.people .avatar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8px;
+}
+.people .avatar img{
+    border-radius: 50%;
+    background-color: #1EBFC1;
+    margin-left: -7px;
+}
+.people .avatar img:first-child{
+    margin: 0;
+}
+.people .avatar img:nth-child(2){
+    background: #FFC147;
+}
+.people .avatar img:nth-child(3){
+    background: #FF947A;
+}
+.people .avatar img:nth-child(4){
+    background: #BF83FF;
+}
+.people .avatar .user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -7px;
+    width: 33px;
+    height: 33px;
+    background-color: #1EBFC1;
+    border-radius: 50%;
+    color: #FFF;
+    font-size: 10px;
+    font-weight: 500;
+}
+
