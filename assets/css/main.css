@@ -3,6 +3,9 @@
 }
 
  /* ========Code chung========= */
+:root{
+    --primary-color:#1EBFC1;
+}
 html{
     font-size: 62.5%;
 }
@@ -15,7 +18,9 @@ a{
 }
 .main-content{
     width: 1170px;
+    max-width: calc(100% - 48px);
     margin: 0 auto;
+
 }
 .btn{
     display: flex;
@@ -24,40 +29,59 @@ a{
     width: 186px;
     height: 68px;
     border-radius: 14px;
-    background: #1EBFC1;
+    background: var(--primary-color);
     color: #FFF;
     font-size: 1.8rem;
     font-weight: 600;
 }
+.btn:hover{
+    opacity: 0.8;
+}
 /* =======Header======= */
 .header{
-    padding-top: 52px;
+    position: sticky;
+    top: -44px;
+    z-index: 1;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.05);
 }
 .header .body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 52px 0 8px;
+    background: #fff;
 }
 .navbar .list-item{
     display: flex;
     gap: 15px;
 }
-.navbar .nav-item a{
+.navbar .nav-item-link{
     display: block;
     color: #2F3A3B;
     font-size: 1.6rem;
     padding: 12px;
+    transition: all 0.2s;
 }
-
+.Register-login .sign-in:hover,
+.navbar .nav-item-link:hover{
+    transform: scale(1.03);
+    color: #000;
+}
+.navbar .nav-item-link.active{
+    font-weight: 600;
+    color: #2F3A3B;
+    transform: none;
+}
 .header .Register-login{
     display: flex;
     align-items: center;
 }
-.header .sign-in a{
+.header .sign-in{
     display: block;
     padding: 24px;
     color: #494949;
     font-size: 1.6rem;
+    transition: all 0.2s;
 }
 .header .Register-login .btn-sign-up{
     display: flex;
@@ -66,21 +90,27 @@ a{
     width: 108px;
     height: 48px;
     border-radius: 6px;
-    border: 1px solid #1EBFC1;
+    border: 1px solid var(--primary-color);
 }
-.header .btn-sign-up a{
-    display: block;
+.header .btn-sign-up{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    color: #1EBFC1;
-    text-align: center;
+    height: 100%;
+    color: var(--primary-color);
     font-size: 1.6rem;
     font-weight: 600;
 }
-
+.header .btn-sign-up:hover{
+    background: var(--primary-color);
+    color: #fff;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
 
 /* ======hero======= */
 .hero{
-    padding: 50px 0;
+    padding: 42px 0;
 }
 .hero .body{
     display: flex;
@@ -196,7 +226,7 @@ a{
 }
 .people .avatar img{
     border-radius: 50%;
-    background-color: #1EBFC1;
+    background-color: var(--primary-color);
     margin-left: -7px;
 }
 .people .avatar img:first-child{
@@ -218,7 +248,7 @@ a{
     margin-left: -7px;
     width: 33px;
     height: 33px;
-    background-color: #1EBFC1;
+    background-color: var(--primary-color);
     border-radius: 50%;
     color: #FFF;
     font-size: 10px;
