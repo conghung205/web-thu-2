@@ -36,20 +36,34 @@ a{
 }
 .btn:hover{
     opacity: 0.8;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.line-clamp{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+}
+.line-clamp.line-2{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+
 }
 /* =======Header======= */
 .header{
     position: sticky;
     top: -44px;
     z-index: 1;
-    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.05);
+    background: #fff;
 }
 .header .body{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 52px 0 8px;
-    background: #fff;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.05);
 }
 .navbar .list-item{
     display: flex;
@@ -110,7 +124,7 @@ a{
 
 /* ======hero======= */
 .hero{
-    padding: 42px 0;
+    padding: 42px 0 79px;
 }
 .hero .body{
     display: flex;
@@ -151,6 +165,10 @@ a{
     max-width: 576px;
     height: 631px;
     background: #E0F7F6;
+}
+.hero-right .hero-img img{
+    width: 100%;
+    object-fit: cover;
 }
 .hero .hero-right .course-mini{
     display: flex;
@@ -221,10 +239,12 @@ a{
 .people .avatar{
     display: flex;
     align-items: center;
-    justify-content: center;
     margin-top: 8px;
 }
 .people .avatar img{
+    width: 33px;
+    height: 33px;
+    object-fit: cover;
     border-radius: 50%;
     background-color: var(--primary-color);
     margin-left: -7px;
@@ -255,3 +275,333 @@ a{
     font-weight: 500;
 }
 
+
+
+
+/* Phần feature for student */
+.for-students{
+    margin-top: 130px;
+}
+.for-students .body{
+    max-width: 1024px;
+}
+.for-students .describe{
+    color: #767E7E;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.for-students .heading{
+    color: #0D1111;
+    font-size: 4.2rem;
+    font-weight: 700;
+    line-height: 1.33; /*56px = 133.333% */
+    max-width: 590px;
+}
+.for-students .desc{
+    color: #767E7E;
+    font-size: 1.8rem;
+    max-width: 590px;
+}
+.features{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+.features .item{
+    max-width: 168px;
+}
+.features .head{
+    margin-top: 26px;
+    color: #0D1111;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.features .desc{
+    margin-top: 16px;
+    color: #9DA6A5;
+    font-size: 1.6rem;
+    line-height: 1.69; /*27px = 168.75% */
+}
+
+
+
+/* =======Phần khoá học========= */
+.courses-popular{
+    margin-top: 130px;
+}
+.courses-popular .describe{
+    color: #767E7E;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.courses-popular .heading{
+    margin-top: 18px;
+    color: #0D1111;
+    font-size: 4.2rem;
+    font-weight: 700;
+}
+.courses-popular .desc{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 19px;
+}
+.courses-popular .desc span{
+    max-width: 525px;
+    color: #767E7E;
+    font-size: 1.8rem;
+    line-height: 1.78; /*32px = 177.778% */
+}
+.courses-popular .desc a{
+    color: #1EBFC1;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+}
+.courses-popular .desc a:hover{
+    opacity: 0.7;
+}
+.courses{
+    margin-top: 79px;
+    display: flex;
+    justify-content: space-between;
+}
+.course{
+    display: flex;
+    flex-direction: column;
+    max-width: 359px;
+    border-radius: 15px;
+}
+.course .course-img{
+    width: 100%;
+    object-fit: cover;
+}
+.popular .course:hover{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.courses .content{
+    background: #fff;
+    border-radius: 8px;
+    width: 325px;
+    padding: 18px 25px;
+    margin-left: 17px;
+    margin-right: 17px;
+    margin-top: -90px;
+    box-shadow: 0px 16px 90px 0px rgba(0, 0, 0, 0.05);
+}
+.courses .content .head{
+    color: #0D1111;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+.courses .content .price{
+    margin-top: 16px;
+    color: #767E7E;
+    font-size: 1.6rem;
+}
+.courses .content .price strong{
+    color: #0D1111;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+.courses .content .desc{
+    margin-top: 6px;
+    color: #9DA6A5;
+    font-size: 1.4rem;
+}
+.courses .content .duration{
+    margin-top: 18px;
+    display: flex;
+    gap: 10px;
+}
+.course .duration span{
+    color: #9DA6A5;
+    font-size: 1.4rem;
+}
+
+
+
+/* Phần số lượng.... */
+.number-of{
+    margin-top: 265px;
+}
+.number-of .body{
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+}
+.number-of .body .heading{
+    color: #0D1111;
+    text-align: center;
+    font-size: 6.2rem;
+    font-weight: 700;
+}
+.number-of .body .desc{
+    margin-top: 11px;
+    color: #767E7E;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+
+
+
+/* <!-- Phần the best people --> */
+.best-people{
+    margin-top: 264px;
+}
+.best-people .body{
+    display: flex;
+}
+.best-people .body .content{
+    max-width: 419px;
+}
+.best-people .content .quote{
+    margin-top: 27px;
+    color: #5D6564;
+    font-size: 3.2rem;
+    line-height: 1.5; /*48px = 150% */
+}
+.best-people .content .desc{
+    margin-top: 33px;
+    color: #767E7E;
+    font-size: 1.6rem;
+}
+.best-people .content strong{
+    color: #070707;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+.best-people .arrow{
+    margin-top: 52px;
+    display: flex;
+    gap: 30px;
+}
+.best-people .arrow .arrow-btn{
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #2AC9BF;
+}
+.best-people .arrow .arrow-btn:hover{
+    cursor: pointer;
+    opacity: 0.8;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* sắp xếp ảnh theo hình tròn */
+.best-people .people-img{
+    width: 679px;
+    height: 481px;
+    margin-left: auto;
+    position: relative;
+}
+.best-people .people-img .icon-img{
+    position: absolute;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.best-people .main-icon{
+    right: 171px;
+    top: 107px;
+}
+.best-people .icon-1{
+    right: 0;
+    top: 19px;
+    background: #BF83FF;
+}
+.best-people .icon-2{
+    right: 32px;
+    bottom: 29px;
+    background: #B1DFDC;;
+}
+.best-people .icon-3{
+    left: 212px;
+    bottom: 0;
+    background: #FF8282;;
+}
+.best-people .icon-4{
+    left: 0;
+    bottom: 145px;
+    background: #FFC147;;
+}
+.best-people .icon-5{
+    left: 144px;
+    top: 0;
+    background: #1EBFC1;;
+}
+
+
+
+/* ======Phần chân của main */
+.main-bottom{
+    margin-top: 130px;
+    background: #DEF6F5;
+}
+.main-bottom .body{
+    padding: 76px 0 88px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-bottom .heading{
+    color: #070707;
+    font-size: 4.2rem;
+    font-weight: 700;
+}
+.main-bottom .desc{
+    margin-top: 18px;
+    color: #767E7E;
+    font-size: 1.8rem;
+}
+.main-bottom-btn{
+    margin-right: 154px;
+}
+
+
+
+
+/* ====Phần footer===== */
+.footer{
+    margin-top: 130px;
+}
+.footer .body{
+    display: flex;
+    justify-content: space-between;
+}
+.footer .body .logo{
+    width: 127px;
+    height: 37px;
+}
+.footer .head{
+    color: #2E2E2E;
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+.footer .text{
+    margin-top: 18px;
+    color: #535353;
+    font-size: 1.6rem;
+}
+.footer .text:hover{
+    color: #0E0E0E;
+}
+.footer .social .text{
+    display: flex;
+    align-items: center;
+}
+.footer .copyright{
+    margin: 80px 0 50px;
+    text-align: center;
+    color: #B0B5B4;
+    font-size: 1.8rem;
+}
